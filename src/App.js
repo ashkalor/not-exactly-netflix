@@ -1,4 +1,5 @@
 import "./App.css";
+import Banner from "./components/Banner";
 import Row from "./components/Row";
 import requests from "./requests";
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* Header */}
-      {/* Banner */}
+      <Banner />
       <Row
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}

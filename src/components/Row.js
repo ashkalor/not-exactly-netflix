@@ -12,7 +12,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
     };
     fetchData();
   }, [fetchUrl]);
-  console.log(movies);
+
   return (
     <div>
       <h1 className="text-xl font-bold ">{title}</h1>
@@ -24,9 +24,9 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             }`}
             key={movie.id}
             src={`${baseURL}${
-              isLargeRow ? movie.poster_path : movie.backdrop_path
+              isLargeRow ? movie?.poster_path : movie?.backdrop_path
             }`}
-            alt={movie.name}
+            alt={movie?.name}
           />
         ))}
       </div>
