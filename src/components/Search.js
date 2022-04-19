@@ -14,18 +14,18 @@ const Search = ({ searchValue, fetchUrl }) => {
   return (
     <div className=" pt-[150px] px-[3%] text-white">
       <div className="text-4xl mb-10">Search Results: </div>
-      <div className="grid grid-cols-4 w-[full]">
+      <div className="grid grid-cols-4 w-[full] gap-6">
         {movies
           .filter((movie) => movie.backdrop_path != null)
           .map((movie) => (
             <div>
               <img
-                className="object-contain w-[250px]"
+                className="object-contain"
                 key={movie.id}
                 src={`${baseURL}${movie?.backdrop_path}`}
                 alt={movie?.name}
               />
-              <div className="truncate w-[250px] mb-5">
+              <div className="truncate w-[250px] mb-5 mt-1">
                 {movie?.name || movie?.title || movie?.original_name}
               </div>
             </div>
