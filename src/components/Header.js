@@ -35,7 +35,7 @@ const Header = ({ searchHandler }) => {
       />
       <div className="flex ">
         <div
-          className={`flex space-x-2 items-center px-2 transition-colors ease-in  ${
+          className={`flex space-x-2 items-center px-2 transition-colors ease-in mr-2 ${
             showSearch && "bg-[#1e1e1e] box-border border"
           }`}
         >
