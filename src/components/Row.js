@@ -14,7 +14,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
   }, [fetchUrl]);
 
   return (
-    <div className="pl-[5%]">
+    <div className="pl-[3%]">
       <h1 className="text-xl font-bold text-white ">{title}</h1>
       <div className="flex scrollbar-hide overflow-y-hidden overflow-x-scroll p-[20px] group">
         {movies.map((movie) => (

@@ -27,7 +27,7 @@ const Banner = () => {
       }}
       className=" object-contain h-[448px] text-white  relative mb-3"
     >
-      <div className="pt-[140px] h-[190px] max-w-[600px] px-[5%]">
+      <div className="pt-[140px] h-[190px] max-w-[600px] px-[3%]">
         <h1 className="font-bold text-5xl mb-5">
           {movie.title || movie.name || movie.orginal_name}
         </h1>
