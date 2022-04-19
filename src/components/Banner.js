@@ -17,7 +17,6 @@ const Banner = () => {
     };
     fetchData();
   }, []);
-  console.log(movie);
   return (
     <div
       style={{
