@@ -25,10 +25,10 @@ const Banner = () => {
         backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie?.backdrop_path})`,
         backgroundPosition: "top center",
       }}
-      className="object-contain h-[448px] text-white"
+      className=" object-contain h-[448px] text-white  relative mb-3"
     >
-      <div className="pt-[140px] h-[190px] max-w-[500px]">
-        <h1 className="font-bold text-6xl mb-5">
+      <div className="pt-[140px] h-[190px] max-w-[600px] px-[5%]">
+        <h1 className="font-bold text-5xl mb-5">
           {movie.title || movie.name || movie.orginal_name}
         </h1>
         <div className="flex space-x-3 mb-5">
@@ -41,10 +41,11 @@ const Banner = () => {
             <div className="font-bold text-xl ">Info</div>
           </button>
         </div>
-        <div className="text-ellipsis overflow-hidden max-h-[80px]">
+        <div className="text-ellipsis overflow-scroll scrollbar-hide max-h-[78px]">
           {movie?.overview}
         </div>
       </div>
+      <div className="h-[80px] absolute bottom-0 right-0 w-full  bg-gradient-to-t from-[#111]" />
     </div>
   );
 };
