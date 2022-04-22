@@ -5,7 +5,10 @@ import Header from "./components/Header";
 import Row from "./components/Row";
 import Search from "./components/Search";
 import requests from "./requests";
-
+import ReactGA from "react-ga";
+const TRACKING_ID = "G-PBGTJLGC5E";
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname + window.location.search);
 function App() {
   const [searchValue, setSearchValue] = useState("");
 
